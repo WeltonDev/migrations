@@ -3,7 +3,9 @@ const Posts = require("../../models/Posts");
 module.exports = {
   async listPosts(req, res) {
     try {
-      const posts = await Posts.findAll();
+      const posts = await Posts.findAll({
+        include: { association: "publications" }
+      });
       res.status(201).json(posts);
     } catch (error) {
       res.status(400).json(`Falha ao listar usuários: ${error}`);

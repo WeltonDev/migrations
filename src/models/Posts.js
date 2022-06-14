@@ -7,11 +7,16 @@ class Posts extends Model {
         user_id: DataTypes.INTEGER,
         createdAt: DataTypes.DATE,
         updatedAt: DataTypes.DATE
-      },
-      { 
+      }, { 
         sequelize
        })
     }
+
+    static associate(models){
+      this.belongsTo(models.Users, { foreignKey: 'user_id', as: 'publications' });
+    }
   }
+
+
 
   module.exports = Posts;
