@@ -29,8 +29,10 @@
 
 
 ## :dart: About
-
-<h4 align="center">Rede Social Parrot</h4>
+<p align="center">
+  <img src="https://github.com/WeltonDev/migrations/blob/main/logo.png">
+</p>
+<h2 align="center">Rede Social Parrot</h2>
 <p>Projeto criado para o hans on week 4, do curso Gama Experience x41, com intuito de por em prática os conhecimentos adquíridos em NodeJs e ReactJs das turmas de Back-end e Front-end.
  </p>
 
@@ -46,9 +48,9 @@ comunidade.
   </p>
   
   ## :link: Demo
-
-![Demo](https://github.com/WeltonDev/investimentos/blob/main/demo.png)
-
+<p align="center">
+<img src="https://github.com/WeltonDev/migrations/blob/main/Screenshot%20from%202022-06-16%2021-06-07.png">          
+</p>
 <br>
 
 ## :sparkles: Features
