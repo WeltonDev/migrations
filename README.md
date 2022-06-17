@@ -67,18 +67,19 @@ comunidade.
 
 Algumas das tecnologias utilizadas nesse projeto foram:
 
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
-- [MySql](https://developer.mozilla.org/pt-BR/docs/Web/mysql/)
-- [Nodejs](https://developer.mozilla.org/pt-BR/docs/Web/nodejs/)
-- [ReactJs](https://developer.mozilla.org/pt-BR/docs/Web/Reactjs/)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/html.svg" width="28px"> [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/css.svg" width="28px"> [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/javascript-programming-language.svg" width="28px"> [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/mysql.svg" width="28px"> [MySql](https://developer.mozilla.org/pt-BR/docs/Web/mysql/)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/node-js.svg" width="28px"> [Nodejs](https://developer.mozilla.org/pt-BR/docs/Web/nodejs/)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/react-js.svg" width="28px"> [ReactJs](https://developer.mozilla.org/pt-BR/docs/Web/Reactjs/)
+- <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/expressjs.svg" width="28px"> [ExpressJs](https://developer.mozilla.org/pt-BR/docs/Web/Reactjs/)
 
 ## 👨‍💻 Devs
 ### Back-end
-- [Welton Rodrigues](https://github.com/WeltonDev)
-- [Vinicius Antonello](https://github.com/ViniciusAntonello)
+- <img src="https://avatars.githubusercontent.com/u/96987306?s=64&v=4" width="28px"> [Welton Rodrigues](https://github.com/WeltonDev)
+- <img src="https://avatars.githubusercontent.com/u/91735500?s=64&v=4" width="28px"> [Vinicius Antonello](https://github.com/ViniciusAntonello)
 
 ### Front-end 
-- [Sabrynna Lourenço](https://github.com/sabrynnall)
-- [Diego Cancelas](https://github.com/diegocancellas)
+- <img src="https://avatars.githubusercontent.com/u/86985496?s=64&v=4" width="28px"> [Sabrynna Lourenço](https://github.com/sabrynnall)
+- <img src="https://mpng.subpng.com/20180824/jtl/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b0bac53.1999041115351082030478.jpg" width="28px"> [Diego Cancelas](https://github.com/diegocancellas)
