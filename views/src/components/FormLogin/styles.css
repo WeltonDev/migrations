@@ -1,0 +1,126 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.parrot-logo {
+    width: 150px;
+}
+
+#main-container-login form h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+.input-login {
+    margin-top: 5%;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #909090;
+    border-radius: 8px !important;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px !important;
+    padding: 1% 0 !important;
+}
+
+.error {
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.botao-login {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.botao-login button {
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    background-color: #76BB4C;
+    transition: 0.2s ease-in-out;
+    color: #000;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding: 2px;
+    outline: none;
+    margin-bottom: 2%;
+}
+
+.botao-login button:hover {
+    background-color: #512DA8;
+}
+
+.botao-login button:focus {
+    background-color: #512DA8;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    --bs-btn-hover-bg: #512DA8;
+}
+
+.btn-cadastrar {
+    font-family:  'Questrial', sans-serif;
+    font-size: 14px;
+    background-color: #FFF;
+    color: #555555;
+    text-decoration: none;
+}
+
+.btn-cadastrar:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 900px) {
+
+    .parrot-logo {
+        width: 300px;
+    }
+
+    #main-container-login form h1 {
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+
+    .input-login {
+        width: 400px;
+        font-size: 30px !important;
+    }
+
+    .botao-login Button {
+        width: 400px;
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    .btn-cadastrar {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .parrot-logo {
+        width: 150px;
+    }
+
+    #main-container-login form h1 {
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .input-login {
+        font-size: 20px !important;
+        width: 270px;
+    }
+
+    .botao-login Button {
+        width: 270px;
+        font-size: 20px;
+    }
+
+    .btn-cadastrar {
+        font-size: 15px;
+    }
+}

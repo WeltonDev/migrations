@@ -1,0 +1,33 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/background.png');
+    height: 100%;
+}
+
+#main-container {
+    background-color: #FFF;
+    width: 30%;
+    padding: 2%;
+    margin-top: 1% !important;
+}
+
+@media screen and (max-width: 900px) {
+
+    #main-container {
+        width: 80%;
+        padding: 5%;
+        margin-top: 3% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    #main-container {
+        width: 90%;
+        padding: 8%;
+        margin-top: 6% !important;
+    }
+}

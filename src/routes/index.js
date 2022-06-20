@@ -1,17 +1,17 @@
 const express = require("express");
 
 // Controllers
-const postsController = require("../controllers/posts/postsController");
-const usersController = require("../controllers/users/usersController");
-const authController = require("../controllers/auth/authController");
+const postsController = require("../domain/posts/controllers/postController");
+const usersController = require("../domain/users/controllers/usersController");
+const authController = require("../domain/auth/controllers/authController");
 
 // Validação de dados nas requisições
-const userCreateValidate = require("../validations/users/create");
-const postCreateValidate = require("../validations/posts/create");
-const loginValidate = require("../validations/auth/login");
+const userCreateValidate = require("../infrastructure/database/validations/users/create");
+const postCreateValidate = require("../infrastructure/database/validations/posts/create");
+const loginValidate = require("../infrastructure/database/validations/auth/login");
 
 // Autenticação de dados
-const auth = require("../middleware/auth");
+const auth = require("../middlewares/auth");
 
 const routes = express.Router();
 
@@ -26,8 +26,8 @@ routes.delete("/delete/:id", auth, usersController.deleteUser);
 
 // Posts
 routes.get("/posts", auth, postsController.listPosts);
-routes.post("/posts", auth, postsController.createPost);
-routes.put("/posts/:id", auth, postsController.updatePost);
-routes.delete("/posts/:id", auth, postsController.deletePost);
+routes.post("/post", postCreateValidate, auth, postsController.createPost);
+routes.put("/edit/:id", auth, postsController.updatePost);
+routes.delete("/remove/:id", auth, postsController.deletePost);
 
 module.exports = routes;
