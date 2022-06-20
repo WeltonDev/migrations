@@ -1,0 +1,101 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+#main-container form h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+.input-cadastro {
+    margin-top: 5%;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #909090;
+    border-radius: 8px !important;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding: 1% 0 !important;
+}
+
+.error {
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.botao-cadastrar {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.botao-cadastrar button {
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    background-color: #76BB4C;
+    transition: 0.2s ease-in-out;
+    color: #000;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding: 2px;
+    outline:none;
+}
+
+.botao-cadastrar button:hover {
+    background-color: #512DA8;
+}
+
+.botao-cadastrar button:focus {
+    background-color: #512DA8;
+    box-shadow: none !important;
+}
+
+.btn-entrar {
+    text-decoration: none;
+    color: #FFF;
+}
+
+@media screen and (max-width: 900px) {
+
+    .parrot-logo {
+        width: 300px;
+    }
+
+    #main-container form h1 {
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+
+    .input-cadastro {
+        width: 400px;
+        font-size: 30px !important;
+    }
+
+    .botao-cadastrar Button {
+        width: 400px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .parrot-logo {
+        width: 150px;
+    }
+
+    #main-container form h1 {
+        font-size: 20px;
+        margin-bottom: 10%;
+    }
+
+    .input-cadastro {
+        font-size: 20px !important;
+        width: 270px;
+    }
+
+    .botao-cadastrar Button {
+        width: 270px;
+        font-size: 20px;
+    }
+}
