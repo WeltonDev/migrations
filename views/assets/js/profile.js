@@ -1,4 +1,5 @@
 const nome = document.querySelector(".name");
+const name_user = document.querySelector("#name_user");
 const ape = document.querySelector(".ape");
 const email = document.querySelector(".email");
 const answer = document.querySelector(".answer");
@@ -9,7 +10,7 @@ const user_storage = localStorage.getItem("user");
 const user = JSON.parse(user_storage);
 const BASE_URL = "http://localhost:3333";
 
-
+name_user.innerHTML = user.name;
 const getUser = async() => {
     try {
         nome.innerHTML = user.name;

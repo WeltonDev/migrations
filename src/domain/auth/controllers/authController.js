@@ -9,9 +9,7 @@ const authController = {
     const { email, password } = req.body;
 
     const user = await Users.findOne({
-      where: {
-        email,
-      },
+      where: { email },
     });
 
     if(!user){
@@ -29,8 +27,16 @@ const authController = {
         apartment: user.apartment
     },
     secret.key
-    )
-    return res.json(token)
+    );
+
+    let user_data = [token, {
+      id: user.id,
+      email: user.email,
+      name: user.name,
+      apartment: user.apartment
+    }];
+
+    return res.json(user_data)
   },
 };
 

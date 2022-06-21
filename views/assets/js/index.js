@@ -25,7 +25,6 @@ const getIn = async() => {
     const content = await fetch(`${BASE_URL}/login`, requestOptions);
     const result = await content.json();
 
-    console.log(result)
 
     if(result == `Email ou senha inválidos!` || result == `Usuário não cadastrado!` || !result){
         answer.innerHTML = result;
@@ -35,9 +34,7 @@ const getIn = async() => {
 
     localStorage.setItem("token", result[0]);
     localStorage.setItem("user", JSON.stringify(result[1]));
-
-    console.log(result);
-
+console.log(result)
 window.location = "./feed.html"
     } catch (error) {
         console.log(`error`);

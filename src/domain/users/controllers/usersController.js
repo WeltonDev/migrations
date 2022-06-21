@@ -12,6 +12,17 @@ module.exports = {
     }
   },
 
+  async listUserId(req, res) {
+    try {
+      const users = await Users.findByPk(req.params.id,{
+        include: ["publications"]
+      });
+      res.status(201).json(users);
+    } catch (error) {
+      res.status(400).json(`Falha ao listar usuários: ${error}`);
+    }
+  },
+
   async createUser(req, res) {
     try {
       const { name, email, apartment, password } = req.body;
