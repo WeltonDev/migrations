@@ -13,11 +13,11 @@ const authController = {
     });
 
     if(!user){
-        return res.status(400).json("Email ou senha inválido");
+        return res.status(400).json("Email ou senha inválidos");
     }
 
     if(!bcrypt.compareSync(password, user.password)){
-        return res.status(401).json("Email ou senha inválido");
+        return res.status(401).json("Email ou senha inválidos");
     }
 
     const token = jwt.sign({

@@ -28,6 +28,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    margin: 1rem;
 }
 
 #form {
@@ -53,7 +54,7 @@ body {
     margin-bottom: 2rem;
 }
 
-#email, #password, #login, #name, #checkpswd, #apartment, #create {
+#email, #password, #login, #name, #checkpswd, #apartment, #create, #remove {
     width: 100%;
     margin-bottom: 1rem;
     border:#757575 1px solid;
@@ -67,8 +68,13 @@ body {
     cursor: pointer;
 }
 
+#remove {
+    background-color: #f03a22da;
+    cursor: pointer;
+}
+
 #create_user {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     color:#212121;

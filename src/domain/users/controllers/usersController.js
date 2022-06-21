@@ -55,6 +55,7 @@ module.exports = {
     try {
       const { id } = req.params;
       const { name, email, apartment, password } = req.body;
+      const newPassword = bcrypt.hashSync(password, 10)
 
       const userExist = await Users.count({
         where: { id },
@@ -69,7 +70,7 @@ module.exports = {
           name,
           email,
           apartment,
-          password,
+          password: newPassword,
         },
         {
           where: { id },
