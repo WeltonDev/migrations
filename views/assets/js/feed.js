@@ -11,10 +11,6 @@ const answer = document.querySelector(".answer");
 
 const getFeed = async () => {
 
-  if(localStorage.length == 0){
-    window.location = "./login.html";
-    return
-  }
 
   name_user.innerHTML = `Olá, ${user.name} |`;
 
