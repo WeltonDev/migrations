@@ -9,8 +9,15 @@ const exit = document.querySelector("#getOut");
 const user_storage = localStorage.getItem("user");
 const user = JSON.parse(user_storage);
 const BASE_URL = "http://localhost:3333";
+const token = localStorage.getItem("token");
 
 name_user.innerHTML = user.name;
+
+if(!token){
+  localStorage.clear();
+  window.location = "./login.html";
+}
+
 const getUser = async() => {
     try {
         nome.innerHTML = user.name;
@@ -71,7 +78,7 @@ const getPostsUser = async() => {
       
             section.innerHTML = `
                   <section>
-                              <img src="./assets/img/user.png" alt="user">
+                              <img src="../assets/img/user.png" alt="user">
                           </section>
       
                           <section class="user_data">

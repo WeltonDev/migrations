@@ -9,8 +9,14 @@ const loading = document.querySelector(".loading");
 const exit = document.querySelector("#getOut");
 const answer = document.querySelector(".answer");
 
-const getFeed = async () => {
+token = localStorage.getItem("token");
 
+if(!token){
+  localStorage.clear();
+  window.location = "./login.html";
+}
+
+const getFeed = async () => {
 
   name_user.innerHTML = `Olá, ${user.name} |`;
 
@@ -19,7 +25,7 @@ const getFeed = async () => {
       method: "GET",
       headers: {
         "Content-type": "application/json",
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
       },
     };
 
@@ -38,7 +44,7 @@ const getFeed = async () => {
 
       section.innerHTML = `
             <section>
-                        <img src="./assets/img/user.png" alt="user">
+                        <img src="../assets/img/user.png" alt="user">
                     </section>
 
                     <section class="user_data">
